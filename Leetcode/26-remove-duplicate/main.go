@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func removeDuplicates(nums []int) int {
-
+	// розвязок в якому вихідний nums змінюється
 	if len(nums) == 0 {
 		return 0
 	}
