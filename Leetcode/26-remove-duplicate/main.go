@@ -7,17 +7,18 @@ func removeDuplicates(nums []int) int {
 	if len(nums) == 0 {
 		return 0
 	}
-	j := 0
+	j := 0 // вказівник для унікальних елементів
 	for i := 1; i <= len(nums)-1; i++ {
 		if nums[i] != nums[j] {
 			j++
-			nums[j] = nums[i]
+			nums[j] = nums[i] // переміщуємо новий унікальний елемент на позицію j
 		}
 	}
 	fmt.Println(j + 1)
 
 	return j + 1
 
+	// розвязок в якому вихідний nums не змінюється
 	// counter := []int{nums[0]}
 	// if len(nums) > 1 {
 
