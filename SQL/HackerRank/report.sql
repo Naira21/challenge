@@ -18,7 +18,7 @@ SELECT
         WHEN Students.Marks < 70 THEN NULL
         ELSE Students.Name
     END AS Name,
-    Grade, Students.Marks
+    Grades.Grade, Students.Marks
 FROM Students JOIN Grades
     ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
 
